@@ -51,61 +51,61 @@ public class Fraccionario {
     public Fraccionario sumar(Fraccionario f2) throws DenominadorCeroException{
         Fraccionario f;
         
-        int n,d,ent,an1,ad1,an2,ad2,num,den;
-        an1=(this.entero*this.denominador)+this.numerador;
-        ad1=this.denominador;
-        an2=(f2.entero*f2.denominador)+f2.numerador;
-        ad2=f2.denominador;
-        n=(an1*ad2)+(ad1*an2);
-        d=ad1*ad2;
-        ent=n/d;
-        num=n%d;
-        den=d;
-        f=new Fraccionario(ent,num, den);
+        int nume,deno,entero,n1,d1,n2,d2,num,den;
+        n1=(this.entero*this.denominador)+this.numerador;
+        d1=this.denominador;
+        n2=(f2.entero*f2.denominador)+f2.numerador;
+        d2=f2.denominador;
+        nume=(n1*d2)+(d1*n2);
+        deno=d1*d2;
+        entero=nume/deno;
+        nume=nume%deno;
+        deno=deno;
+        f=new Fraccionario(entero,nume, deno);
         return f;
     }
     public Fraccionario restar(Fraccionario f2) throws DenominadorCeroException{
         Fraccionario f;
         
-        int n,d,ent,an1,ad1,an2,ad2,num,den;
-        an1=(this.entero*this.denominador)+this.numerador;
-        ad1=this.denominador;
-        an2=(f2.entero*f2.denominador)+f2.numerador;
-        ad2=f2.denominador;
-        n=(an1*ad2)-(ad1*an2);
-        d=ad1*ad2;
-        ent=n/d;
-        num=n%d;
-        den=d;
-        f=new Fraccionario(ent,num, den);
+        int nume,deno,entero,n1,d1,n2,d2,num,den;
+        n1=(this.entero*this.denominador)+this.numerador;
+        d1=this.denominador;
+        n2=(f2.entero*f2.denominador)+f2.numerador;
+        d2=f2.denominador;
+        nume=(n1*d2)-(d1*n2);
+        deno=d1*d2;
+        entero=nume/deno;
+        num=nume%deno;
+        den=deno;
+        f=new Fraccionario(entero,nume, deno);
         return f;
     }
     public Fraccionario multiplicar(Fraccionario f2) throws DenominadorCeroException{
         Fraccionario f;
         
-        int num,den,ent,an1,an2,ad1,ad2,n,d;
-        an1=(this.entero*this.denominador)+this.numerador;
-        ad1=this.denominador;
-        an2=(f2.entero*f2.denominador)+f2.numerador;
-        ad2=f2.denominador;
-        n=an1*an2;
-        d=ad1*ad2;
-        ent=n/d;
-        num=n%d;
-        den=d;
-        f=new Fraccionario(ent,num, den);
+        int nume,deno,entero,n1,n2,d1,d2,n,d;
+        n1=(this.entero*this.denominador)+this.numerador;
+        d1=this.denominador;
+        n2=(f2.entero*f2.denominador)+f2.numerador;
+        d2=f2.denominador;
+        n=n1*n2;
+        d=d1*d2;
+        entero=n/d;
+        nume=n%d;
+        deno=d;
+        f=new Fraccionario(entero,nume, deno);
         return f;
     }
     public Fraccionario dividir(Fraccionario f2) throws DenominadorCeroException{
         Fraccionario f;
         
-        int num,den,ent,an1,an2,ad1,ad2,n,d;
-        an1=(this.entero*this.denominador)+this.numerador;
-        ad1=this.denominador;
-        an2=(f2.entero*f2.denominador)+f2.numerador;
-        ad2=f2.denominador;
-        n=an1*ad2;
-        d=ad1*an2;
+        int num,den,ent,n1, n2, d1,d2,n,d;
+        n1=(this.entero*this.denominador)+this.numerador;
+        d1=this.denominador;
+        n2=(f2.entero*f2.denominador)+f2.numerador;
+        d2=f2.denominador;
+        n=n1*d2;
+        d=d1*n2;
         ent=n/d;
         num=n%d;
         den=d;
@@ -114,12 +114,12 @@ public class Fraccionario {
     }
     public Fraccionario covertirafraccion() throws DenominadorCeroException{
         Fraccionario f;
-        int num,den,ent;
+        int nume,deno,entero;
         
-        num=(this.entero*this.denominador)+this.numerador;
-        den=this.denominador;
-        ent=this.entero;
-        f=new Fraccionario(ent,num, den);
+        nume=(this.entero*this.denominador)+this.numerador;
+        deno=this.denominador;
+        entero=this.entero;
+        f=new Fraccionario(entero,nume, deno);
         return f;
     }
 }

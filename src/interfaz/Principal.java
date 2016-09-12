@@ -60,34 +60,35 @@ public class Principal extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Bookman Old Style", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 0, 0));
         jLabel1.setText("Operaciones con Fracciones mixtas");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, -1, -1));
 
         txtNum1.setFont(new java.awt.Font("Bookman Old Style", 0, 12)); // NOI18N
-        jPanel1.add(txtNum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 60, 60, -1));
+        jPanel1.add(txtNum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, 60, -1));
 
         txtDen1.setFont(new java.awt.Font("Bookman Old Style", 0, 12)); // NOI18N
-        jPanel1.add(txtDen1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, 60, -1));
-        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, 60, 10));
+        jPanel1.add(txtDen1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, 60, -1));
+        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, 60, 10));
 
         txtNum2.setFont(new java.awt.Font("Bookman Old Style", 0, 12)); // NOI18N
-        jPanel1.add(txtNum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 60, 60, -1));
+        jPanel1.add(txtNum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 60, 60, -1));
 
         txtDen2.setFont(new java.awt.Font("Bookman Old Style", 0, 12)); // NOI18N
-        jPanel1.add(txtDen2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 100, 60, -1));
-        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 90, 60, 10));
+        jPanel1.add(txtDen2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 100, 60, -1));
+        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 90, 60, 10));
 
         txtDen3.setEditable(false);
         txtDen3.setFont(new java.awt.Font("Bookman Old Style", 0, 12)); // NOI18N
-        jPanel1.add(txtDen3, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 100, 60, -1));
+        jPanel1.add(txtDen3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 100, 60, -1));
 
         txtNum3.setEditable(false);
         txtNum3.setFont(new java.awt.Font("Bookman Old Style", 0, 12)); // NOI18N
-        jPanel1.add(txtNum3, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 60, 60, -1));
-        jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 90, 60, 10));
+        jPanel1.add(txtNum3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 60, 60, -1));
+        jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 90, 60, 10));
 
         jLabel2.setText("=");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 80, -1, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 90, -1, -1));
 
         cmdLimpiar.setFont(new java.awt.Font("Bookman Old Style", 0, 12)); // NOI18N
         cmdLimpiar.setText("Limpiar");
@@ -96,7 +97,7 @@ public class Principal extends javax.swing.JFrame {
                 cmdLimpiarActionPerformed(evt);
             }
         });
-        jPanel1.add(cmdLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 160, -1, -1));
+        jPanel1.add(cmdLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 220, -1, -1));
 
         cmdCalcular.setFont(new java.awt.Font("Bookman Old Style", 0, 12)); // NOI18N
         cmdCalcular.setText("Calcular");
@@ -105,7 +106,7 @@ public class Principal extends javax.swing.JFrame {
                 cmdCalcularActionPerformed(evt);
             }
         });
-        jPanel1.add(cmdCalcular, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, -1, -1));
+        jPanel1.add(cmdCalcular, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, -1, -1));
 
         cmdConvertirFraccion.setFont(new java.awt.Font("Bookman Old Style", 0, 12)); // NOI18N
         cmdConvertirFraccion.setText("Convertir a Fracción");
@@ -114,26 +115,27 @@ public class Principal extends javax.swing.JFrame {
                 cmdConvertirFraccionActionPerformed(evt);
             }
         });
-        jPanel1.add(cmdConvertirFraccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, -1, -1));
-        jPanel1.add(txtEnt1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 40, 30));
-        jPanel1.add(txtEnt2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 40, 30));
+        jPanel1.add(cmdConvertirFraccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 180, -1, -1));
+        jPanel1.add(txtEnt1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 40, 30));
+        jPanel1.add(txtEnt2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 80, 40, 30));
 
         txtEnt3.setEditable(false);
-        jPanel1.add(txtEnt3, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 80, 40, 30));
+        jPanel1.add(txtEnt3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 80, 40, 30));
 
         cmbOperacion.setFont(new java.awt.Font("Bookman Old Style", 1, 14)); // NOI18N
-        cmbOperacion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "+", "−", "×", "÷" }));
-        jPanel1.add(cmbOperacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 90, -1, -1));
+        cmbOperacion.setForeground(new java.awt.Color(51, 51, 255));
+        cmbOperacion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Suma", "Resta", "Multiplicacion", "Division" }));
+        jPanel1.add(cmbOperacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 80, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 578, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 688, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
         );
 
         pack();
@@ -156,7 +158,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_cmdLimpiarActionPerformed
 
     private void cmdCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdCalcularActionPerformed
-        int op, n1, n2, d1, d2, ent1, ent2;
+        int operacion, num1, num2, den1, den2, entero1, entero2;
         Fraccionario f1;
         Fraccionario f2, f3 = null;
         int sw = 1;
@@ -164,85 +166,85 @@ public class Principal extends javax.swing.JFrame {
         txtDen3.setText("");
         txtEnt3.setText("");
         if (txtEnt1.getText().trim().isEmpty()) {
-            JOptionPane.showMessageDialog(this, "digite parte entera de número 1", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "digite la parte entera de la fraccion #1", "Error", JOptionPane.ERROR_MESSAGE);
             txtEnt1.requestFocusInWindow();
         } else if (txtNum1.getText().trim().isEmpty()) {
-            JOptionPane.showMessageDialog(this, "digite numerador de la fracción número 1", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "digite el numerador de la fraccion #1", "Error", JOptionPane.ERROR_MESSAGE);
             txtNum1.requestFocusInWindow();
         } else if (txtDen1.getText().trim().isEmpty()) {
-            JOptionPane.showMessageDialog(this, "digite denominador de la fracción número 1", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "digite el denominador de la fraccion #1", "Error", JOptionPane.ERROR_MESSAGE);
             txtDen1.requestFocusInWindow();
         } else if (txtEnt2.getText().trim().isEmpty()) {
-            JOptionPane.showMessageDialog(this, "digite parte entera de número 2", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "digite la parte entera de la fraccion #2", "Error", JOptionPane.ERROR_MESSAGE);
             txtEnt2.requestFocusInWindow();
         } else if (txtNum2.getText().trim().isEmpty()) {
-            JOptionPane.showMessageDialog(this, "digite numerador de la fracción número 2", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "digite el numerador de la fraccion #2", "Error", JOptionPane.ERROR_MESSAGE);
             txtNum2.requestFocusInWindow();
         } else if (txtDen2.getText().trim().isEmpty()) {
-            JOptionPane.showMessageDialog(this, "digite denominador de la fracción número 2", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "digite el denominador de la fraccion #2", "Error", JOptionPane.ERROR_MESSAGE);
             txtDen2.requestFocusInWindow();
         } else {
             try {
-                ent1 = Integer.parseInt(txtEnt1.getText());
+                entero1 = Integer.parseInt(txtEnt1.getText());
             } catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(this, "La parte entera de número 1 debe ser valido", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "La parte entera de la fraccion  #1 debe ser valido", "Error", JOptionPane.ERROR_MESSAGE);
                 txtEnt1.requestFocusInWindow();
                 txtEnt1.selectAll();
                 sw = 0;
             }
             try {
-                n1 = Integer.parseInt(txtNum1.getText());
+                num1 = Integer.parseInt(txtNum1.getText());
             } catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(this, "El numerador de la fracción número 1 debe ser valido", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "El numerador de la fracción número #1 debe ser valido", "Error", JOptionPane.ERROR_MESSAGE);
                 txtNum1.requestFocusInWindow();
                 txtNum1.selectAll();
                 sw = 0;
             }
             try {
-                d1 = Integer.parseInt(txtDen1.getText());
+                den1 = Integer.parseInt(txtDen1.getText());
             } catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(this, "El denominador de la fracción número 1 debe ser valido", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "El denominador de la fracción número #1 debe ser valido", "Error", JOptionPane.ERROR_MESSAGE);
                 txtDen1.requestFocusInWindow();
                 txtDen1.selectAll();
                 sw = 0;
             }
             try {
-                ent2 = Integer.parseInt(txtEnt2.getText());
+                entero2 = Integer.parseInt(txtEnt2.getText());
             } catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(this, "La parte entera de número 2 debe ser valido", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "La parte entera de la fraccion número #2 debe ser valido", "Error", JOptionPane.ERROR_MESSAGE);
                 txtEnt2.requestFocusInWindow();
                 txtEnt2.selectAll();
                 sw = 0;
             }
             try {
-                n2 = Integer.parseInt(txtNum2.getText());
+                num2 = Integer.parseInt(txtNum2.getText());
             } catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(this, "El numerador de la fracción número 2 debe ser valido", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "El numerador de la fracción número #2 debe ser valido", "Error", JOptionPane.ERROR_MESSAGE);
                 txtNum2.requestFocusInWindow();
                 txtNum2.selectAll();
                 sw = 0;
             }
             try {
-                d2 = Integer.parseInt(txtDen2.getText());
+                den2 = Integer.parseInt(txtDen2.getText());
             } catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(this, "El denominador de la fracción número 2 debe ser valido", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "El denominador de la fracción número #2 debe ser valido", "Error", JOptionPane.ERROR_MESSAGE);
                 txtDen2.requestFocusInWindow();
                 txtDen2.selectAll();
                 sw = 0;
             }
             if (sw == 1) {
-                op = cmbOperacion.getSelectedIndex();
-                ent1 = Integer.parseInt(txtEnt1.getText());
-                n1 = Integer.parseInt(txtNum1.getText());
-                d1 = Integer.parseInt(txtDen1.getText());
-                ent2 = Integer.parseInt(txtEnt2.getText());
-                n2 = Integer.parseInt(txtNum2.getText());
-                d2 = Integer.parseInt(txtDen2.getText());
+                operacion = cmbOperacion.getSelectedIndex();
+                entero1 = Integer.parseInt(txtEnt1.getText());
+                num1 = Integer.parseInt(txtNum1.getText());
+                den1 = Integer.parseInt(txtDen1.getText());
+                entero2 = Integer.parseInt(txtEnt2.getText());
+                num2 = Integer.parseInt(txtNum2.getText());
+                den2 = Integer.parseInt(txtDen2.getText());
                 try {
-                    f1 = new Fraccionario(ent1, n1, d1);
-                    f2 = new Fraccionario(ent2, n2, d2);
+                    f1 = new Fraccionario(entero1, num1, den1);
+                    f2 = new Fraccionario(entero2, num2, den2);
 
-                    switch (op) {
+                    switch (operacion) {
                         case 0:
                             f3 = f1.sumar(f2);
                             break;
@@ -272,11 +274,11 @@ public class Principal extends javax.swing.JFrame {
         try {
             Fraccionario f3;
             Fraccionario f;
-            int ent, n, d;
-            ent = Integer.parseInt(txtEnt3.getText());
-            n = Integer.parseInt(txtNum3.getText());
-            d = Integer.parseInt(txtDen3.getText());
-            f3 = new Fraccionario(ent, n, d);
+            int entero, num, den;
+            entero = Integer.parseInt(txtEnt3.getText());
+            num = Integer.parseInt(txtNum3.getText());
+            den = Integer.parseInt(txtDen3.getText());
+            f3 = new Fraccionario(entero, num, den);
             f = f3.covertirafraccion();
             txtEnt3.setText("");
             txtNum3.setText("" + f.getNumerador());
