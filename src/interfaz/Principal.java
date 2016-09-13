@@ -10,7 +10,7 @@ package interfaz;
  * @author Camilo_Escobar
  */
 import clases.DenominadorCeroException;
-import clases.Fraccionario;
+import clases.FraccionarioMixtos;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -159,8 +159,9 @@ public class Principal extends javax.swing.JFrame {
 
     private void cmdCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdCalcularActionPerformed
         int operacion, num1, num2, den1, den2, entero1, entero2;
-        Fraccionario f1;
-        Fraccionario f2, f3 = null;
+        FraccionarioMixtos f1;
+        FraccionarioMixtos f2;
+        Fraccionario f3 = null;
         int sw = 1;
         txtNum3.setText("");
         txtDen3.setText("");
@@ -241,8 +242,8 @@ public class Principal extends javax.swing.JFrame {
                 num2 = Integer.parseInt(txtNum2.getText());
                 den2 = Integer.parseInt(txtDen2.getText());
                 try {
-                    f1 = new Fraccionario(entero1, num1, den1);
-                    f2 = new Fraccionario(entero2, num2, den2);
+                    f1 = new FraccionarioMixtos(entero1, num1, den1);
+                    f2 = new FraccionarioMixtos(entero2, num2, den2);
 
                     switch (operacion) {
                         case 0:
@@ -272,13 +273,13 @@ public class Principal extends javax.swing.JFrame {
 
     private void cmdConvertirFraccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdConvertirFraccionActionPerformed
         try {
-            Fraccionario f3;
-            Fraccionario f;
+            FraccionarioMixtos f3;
+            FraccionarioMixtos f;
             int entero, num, den;
             entero = Integer.parseInt(txtEnt3.getText());
             num = Integer.parseInt(txtNum3.getText());
             den = Integer.parseInt(txtDen3.getText());
-            f3 = new Fraccionario(entero, num, den);
+            f3 = new FraccionarioMixtos(entero, num, den);
             f = f3.covertirafraccion();
             txtEnt3.setText("");
             txtNum3.setText("" + f.getNumerador());

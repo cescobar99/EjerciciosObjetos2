@@ -9,13 +9,13 @@ package clases;
  *
  * @author Camilo_Escobar
  */
-public class Fraccionario {
+public class FraccionarioMixtos {
      
     private int numerador;
     private int denominador;
     private int entero;
     
-    public Fraccionario(int entero,int numerador, int denominador) throws DenominadorCeroException{
+    public FraccionarioMixtos(int entero,int numerador, int denominador) throws DenominadorCeroException{
         this.numerador=numerador;
         this.denominador=denominador;
         this.entero=entero;
@@ -48,8 +48,8 @@ public class Fraccionario {
         this.entero = entero;
     }
     
-    public Fraccionario sumar(Fraccionario f2) throws DenominadorCeroException{
-        Fraccionario f;
+    public FraccionarioMixtos sumar(FraccionarioMixtos f2) throws DenominadorCeroException{
+        FraccionarioMixtos f;
         
         int nume,deno,entero,n1,d1,n2,d2,num,den;
         n1=(this.entero*this.denominador)+this.numerador;
@@ -61,11 +61,11 @@ public class Fraccionario {
         entero=nume/deno;
         nume=nume%deno;
         deno=deno;
-        f=new Fraccionario(entero,nume, deno);
+        f=new FraccionarioMixtos(entero,nume, deno);
         return f;
     }
-    public Fraccionario restar(Fraccionario f2) throws DenominadorCeroException{
-        Fraccionario f;
+    public FraccionarioMixtos restar(FraccionarioMixtos f2) throws DenominadorCeroException{
+        FraccionarioMixtos f;
         
         int nume,deno,entero,n1,d1,n2,d2,num,den;
         n1=(this.entero*this.denominador)+this.numerador;
@@ -77,11 +77,11 @@ public class Fraccionario {
         entero=nume/deno;
         num=nume%deno;
         den=deno;
-        f=new Fraccionario(entero,nume, deno);
+        f=new FraccionarioMixtos(entero,nume, deno);
         return f;
     }
-    public Fraccionario multiplicar(Fraccionario f2) throws DenominadorCeroException{
-        Fraccionario f;
+    public FraccionarioMixtos multiplicar(FraccionarioMixtos f2) throws DenominadorCeroException{
+        FraccionarioMixtos f;
         
         int nume,deno,entero,n1,n2,d1,d2,n,d;
         n1=(this.entero*this.denominador)+this.numerador;
@@ -93,11 +93,11 @@ public class Fraccionario {
         entero=n/d;
         nume=n%d;
         deno=d;
-        f=new Fraccionario(entero,nume, deno);
+        f=new FraccionarioMixtos(entero,nume, deno);
         return f;
     }
-    public Fraccionario dividir(Fraccionario f2) throws DenominadorCeroException{
-        Fraccionario f;
+    public FraccionarioMixtos dividir(FraccionarioMixtos f2) throws DenominadorCeroException{
+        FraccionarioMixtos f;
         
         int num,den,ent,n1, n2, d1,d2,n,d;
         n1=(this.entero*this.denominador)+this.numerador;
@@ -109,17 +109,17 @@ public class Fraccionario {
         ent=n/d;
         num=n%d;
         den=d;
-        f=new Fraccionario(ent,num, den);
+        f=new FraccionarioMixtos(ent,num, den);
         return f;
     }
-    public Fraccionario covertirafraccion() throws DenominadorCeroException{
-        Fraccionario f;
+    public FraccionarioMixtos covertirafraccion() throws DenominadorCeroException{
+        FraccionarioMixtos f;
         int nume,deno,entero;
         
         nume=(this.entero*this.denominador)+this.numerador;
         deno=this.denominador;
         entero=this.entero;
-        f=new Fraccionario(entero,nume, deno);
+        f=new FraccionarioMixtos(entero,nume, deno);
         return f;
     }
 }
