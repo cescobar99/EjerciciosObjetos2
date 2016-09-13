@@ -161,7 +161,7 @@ public class Principal extends javax.swing.JFrame {
         int operacion, num1, num2, den1, den2, entero1, entero2;
         FraccionarioMixtos f1;
         FraccionarioMixtos f2;
-        Fraccionario f3 = null;
+        FraccionarioMixtos f3 = null;
         int sw = 1;
         txtNum3.setText("");
         txtDen3.setText("");
