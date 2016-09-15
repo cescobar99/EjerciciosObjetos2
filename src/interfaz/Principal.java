@@ -62,19 +62,39 @@ public class Principal extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Bookman Old Style", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 0, 0));
         jLabel1.setText("Operaciones con Fracciones mixtas");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, -1, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 20, 260, -1));
 
         txtNum1.setFont(new java.awt.Font("Bookman Old Style", 0, 12)); // NOI18N
+        txtNum1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtNum1KeyTyped(evt);
+            }
+        });
         jPanel1.add(txtNum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, 60, -1));
 
         txtDen1.setFont(new java.awt.Font("Bookman Old Style", 0, 12)); // NOI18N
+        txtDen1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtDen1KeyTyped(evt);
+            }
+        });
         jPanel1.add(txtDen1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, 60, -1));
         jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, 60, 10));
 
         txtNum2.setFont(new java.awt.Font("Bookman Old Style", 0, 12)); // NOI18N
+        txtNum2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtNum2KeyTyped(evt);
+            }
+        });
         jPanel1.add(txtNum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 60, 60, -1));
 
         txtDen2.setFont(new java.awt.Font("Bookman Old Style", 0, 12)); // NOI18N
+        txtDen2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtDen2KeyTyped(evt);
+            }
+        });
         jPanel1.add(txtDen2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 100, 60, -1));
         jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 90, 60, 10));
 
@@ -97,7 +117,7 @@ public class Principal extends javax.swing.JFrame {
                 cmdLimpiarActionPerformed(evt);
             }
         });
-        jPanel1.add(cmdLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 220, -1, -1));
+        jPanel1.add(cmdLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 220, -1, -1));
 
         cmdCalcular.setFont(new java.awt.Font("Bookman Old Style", 0, 12)); // NOI18N
         cmdCalcular.setText("Calcular");
@@ -115,8 +135,20 @@ public class Principal extends javax.swing.JFrame {
                 cmdConvertirFraccionActionPerformed(evt);
             }
         });
-        jPanel1.add(cmdConvertirFraccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 180, -1, -1));
+        jPanel1.add(cmdConvertirFraccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 180, -1, -1));
+
+        txtEnt1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtEnt1KeyTyped(evt);
+            }
+        });
         jPanel1.add(txtEnt1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 40, 30));
+
+        txtEnt2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtEnt2KeyTyped(evt);
+            }
+        });
         jPanel1.add(txtEnt2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 80, 40, 30));
 
         txtEnt3.setEditable(false);
@@ -289,6 +321,54 @@ public class Principal extends javax.swing.JFrame {
             Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_cmdConvertirFraccionActionPerformed
+
+    private void txtEnt1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtEnt1KeyTyped
+    char c=evt.getKeyChar(); 
+    if(!Character.isDigit(c)) { 
+    getToolkit().beep(); 
+    evt.consume(); 
+    }
+    }//GEN-LAST:event_txtEnt1KeyTyped
+
+    private void txtNum1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNum1KeyTyped
+    char c=evt.getKeyChar(); 
+    if(!Character.isDigit(c)) { 
+    getToolkit().beep(); 
+    evt.consume(); 
+    }
+    }//GEN-LAST:event_txtNum1KeyTyped
+
+    private void txtDen1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtDen1KeyTyped
+    char c=evt.getKeyChar(); 
+    if(!Character.isDigit(c)) { 
+    getToolkit().beep(); 
+    evt.consume(); 
+    }
+    }//GEN-LAST:event_txtDen1KeyTyped
+
+    private void txtEnt2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtEnt2KeyTyped
+    char c=evt.getKeyChar(); 
+    if(!Character.isDigit(c)) { 
+    getToolkit().beep(); 
+    evt.consume(); 
+    }
+    }//GEN-LAST:event_txtEnt2KeyTyped
+
+    private void txtNum2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNum2KeyTyped
+    char c=evt.getKeyChar(); 
+    if(!Character.isDigit(c)) { 
+    getToolkit().beep(); 
+    evt.consume(); 
+    }
+    }//GEN-LAST:event_txtNum2KeyTyped
+
+    private void txtDen2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtDen2KeyTyped
+    char c=evt.getKeyChar(); 
+    if(!Character.isDigit(c)) { 
+    getToolkit().beep(); 
+    evt.consume(); 
+    }
+    }//GEN-LAST:event_txtDen2KeyTyped
 
     /**
      * @param args the command line arguments
